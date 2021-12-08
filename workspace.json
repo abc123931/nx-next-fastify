@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "fastify-api": "apps/fastify-api",
     "next-application": "apps/next-application",
     "next-application-e2e": "apps/next-application-e2e"
   }

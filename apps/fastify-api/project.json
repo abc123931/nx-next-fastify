@@ -9,8 +9,7 @@
       "options": {
         "outputPath": "dist/apps/fastify-api",
         "main": "apps/fastify-api/src/main.ts",
-        "tsConfig": "apps/fastify-api/tsconfig.app.json",
-        "assets": ["apps/fastify-api/src/assets"]
+        "tsConfig": "apps/fastify-api/tsconfig.app.json"
       },
       "configurations": {
         "production": {

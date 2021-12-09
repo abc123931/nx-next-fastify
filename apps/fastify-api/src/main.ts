@@ -1,21 +1,13 @@
-import Fastify, { FastifyPluginAsync } from "fastify";
+import { pingController } from './app/controller/pingController';
+import Fastify from 'fastify';
 
 const fastify = Fastify({
   connectionTimeout: 3000,
-  logger: { level: "info" },
+  logger: { level: 'info' },
 });
 
-const pingController: FastifyPluginAsync = async (fastify) => {
-  fastify.get(
-    "/",
-    async (_, reply) => {
-      reply.status(200).send({ message: "pong" });
-    }
-  );
-};
-
 const setUp = async () => {
-  fastify.register(pingController, { prefix: "/ping" });
+  fastify.register(pingController, { prefix: '/ping' });
 };
 
 const start = async () => {
